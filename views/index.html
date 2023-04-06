@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginita de prueba</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/6ccbbb9936.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="main-header">
+    <div class="main-header-top-bar">
+        <img src="/images/mercadoPago.png" class="logo">
+        <h2 class="copy-header">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Compra en cuotas y sin tarjeta de credito
+        </h2>
+    </div>
+    <a href="#" class="hamburger-button">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </a>
+    <nav class="main-header-bottom-bar">
+        <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="rigth-navbar">
+            <li><a href="#">Crea tu cuenta</a></li>
+            <li><a href="#">Ingresa</a></li>
+            <li><a href="#">Mis compras</a></li>
+        </ul>
+    </nav>
+</header>
+<form action="crear-producto" method="post" class="create-form">
+    <div>
+        <label for="">Nombre del producto</label>
+        <input type="text" name="nombre">
+    </div>
+    <div>
+        <label for="">Precio</label>
+        <input type="text" name="precio" placeholder="123,45">
+    </div>
+    <div>
+        <label for="">Categoria</label>
+        <select name="categoria" id="">
+            <option value="hogar">Hogar</option>
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Está en oferta</label>
+        <input type="radio" name="oferta">
+    </div>
+    <div>
+        <label for="">Descripcion</label>
+        <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button type="reset">Borrar formulario</button>
+    <button type="submit">Enviar formulario</button>
+
+</form>
+</body>
+
+
+
+
+</html>
